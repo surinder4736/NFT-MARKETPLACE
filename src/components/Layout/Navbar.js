@@ -52,6 +52,9 @@ const Navbar = () => {
     etherscanUrl = 'https://rinkeby.etherscan.io'
   } else if(web3Ctx.networkId === 5) {
     etherscanUrl = 'https://goerli.etherscan.io'
+  }
+  else if(web3Ctx.networkId === 97) {
+    etherscanUrl = 'https://testnet.bscscan.com'
   } else {
     etherscanUrl = 'https://etherscan.io'
   }

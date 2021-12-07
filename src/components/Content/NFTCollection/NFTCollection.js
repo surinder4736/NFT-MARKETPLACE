@@ -5,7 +5,7 @@ import Web3Context from '../../../store/web3-context';
 import CollectionContext from '../../../store/collection-context';
 import MarketplaceContext from '../../../store/marketplace-context';
 import { formatPrice } from '../../../helpers/utils';
-import eth from '../../../img/eth.png';
+import bnb from '../../../img/bnb.png';
 
 const NFTCollection = () => {
   const web3Ctx = useContext(Web3Context);
@@ -80,7 +80,7 @@ const NFTCollection = () => {
                     <button onClick={buyHandler} value={index} className="btn btn-success">BUY</button>
                   </div>
                   <div className="col-7 d-flex justify-content-end">
-                    <img src={eth} width="25" height="25" className="align-center float-start" alt="price icon"></img>                
+                    <img src={bnb} width="25" height="25" className="align-center float-start" alt="price icon"></img>                
                     <p className="text-start"><b>{`${price}`}</b></p>
                   </div>
                 </div> :
@@ -89,7 +89,7 @@ const NFTCollection = () => {
                     <button onClick={cancelHandler} value={index} className="btn btn-danger">CANCEL</button>
                   </div>
                   <div className="col-7 d-flex justify-content-end">
-                    <img src={eth} width="25" height="25" className="align-center float-start" alt="price icon"></img>                
+                    <img src={bnb} width="25" height="25" className="align-center float-start" alt="price icon"></img>                
                     <p className="text-start"><b>{`${price}`}</b></p>
                   </div>
                 </div> :
@@ -102,7 +102,7 @@ const NFTCollection = () => {
                     <input
                       type="number"
                       step="0.01"
-                      placeholder="ETH..."
+                      placeholder="BNB..."
                       className="form-control"
                       ref={priceRefs.current[key]}
                     />

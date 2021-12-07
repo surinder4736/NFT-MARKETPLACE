@@ -29,7 +29,7 @@ const App = () => {
       } catch(error) {
         console.error(error);
       }
-      
+      debugger;
       // Load account
       const account = await web3Ctx.loadAccount(web3);
 
